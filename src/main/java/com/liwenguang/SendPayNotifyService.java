@@ -6,8 +6,14 @@ import io.grpc.fcw.SendPayNotifyGrpc;
 import io.grpc.stub.StreamObserver;
 import lombok.extern.slf4j.Slf4j;
 import org.lognet.springboot.grpc.GRpcService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Async;
 
+/**
+ * @Author liwenguang
+ * @Date 2019-04-03 23:58
+ * @Description 
+ */
 @Slf4j
 @GRpcService
 public class SendPayNotifyService extends SendPayNotifyGrpc.SendPayNotifyImplBase {
@@ -32,6 +38,5 @@ public class SendPayNotifyService extends SendPayNotifyGrpc.SendPayNotifyImplBas
             }
         };
     }
-
 
 }
