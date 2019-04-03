@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.fcw";
+option java_outer_classname = "SendPayNotifyProto";
+
+package grpc;
+
+service SendPayNotify {
+  rpc SendAliPayNotify (stream SendAliPayRequest) returns (Response);
+}
+
+message SendAliPayRequest {
+  string outTradeNo = 1;
+}
+message Response {
+  bool success = 1;
+}
