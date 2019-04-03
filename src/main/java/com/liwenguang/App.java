@@ -9,10 +9,12 @@ import org.springframework.context.annotation.PropertySource;
 /**
  * @Author liwenguang
  * @Date 2019-04-03 23:58
- * @Description 
+ * @Description
+ * TODO
+ * repalce PATH
  */
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-@PropertySource(value={"file:/Users/liwenguang/SourceCode/Github/LogNet_grpc-spring-boot-starter_115/src/main/resources/ext.properties"})
+@PropertySource(value={"file:/PATH/LogNet_grpc-spring-boot-starter_115/src/main/resources/ext.properties"})
 public class App {
 
     public static void main(String[] args) {
